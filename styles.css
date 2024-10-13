@@ -348,7 +348,7 @@ header{
 
 .onprocess{
     font-size: 20px;
-    background-image: url('onprocess.png'); /* Ссылка на ваше изображение */
+    background-image: url('images/onprocess.png'); /* Ссылка на ваше изображение */
     background-size: 20px 20px; /* Размер изображения */
     background-repeat: no-repeat; /* Отключаем повторение */
     padding-left: 30px; /* Отступ для текста */
@@ -386,7 +386,7 @@ header{
     visibility: visible;
 }
 .motivation{
-    background-image: url("morning_sdu.jpg");
+    background-image: url("images/morning_sdu.jpg");
     background-size: 1440px auto;
     background-position: center;
     background-repeat: no-repeat;
