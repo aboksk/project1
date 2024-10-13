@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_main">
+            <div class="header_left">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger"><img src="burger.png"></label>
+                <nav>
+                    <ul class="nav_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li class="current"><a href="hobbies.html">Hobby</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right">
+                <a href=""><img src="telegram.png"></a>
+                <a href=""><img src="instagram.png"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hobbies">
+    <div class="container">
+        <div class="hobby1">
+            <img src="gym.jpg">
+            <div class="description">
+                <h1>GYM</h1>
+                <p>I have been going to the gym for 2 years now. I like this business, I like to create myself. The gym helps me stay in shape and be strong. Now: height 189 cm, weight 79 kg, bench press 80 kg, squat 120 kg.</p>
+            </div>
+        </div>
+        <div class="hobby2">
+            <div class="description2">
+                <h1>READING</h1>
+                <p>I love reading books from an early age. My parents taught me this. It makes you smart, and helps in life. Sometimes it works as a relax. The biggest book I have read is: the path of Abai. I have read 100+ books so far.</p>
+            </div>
+            <img src="book.jpg">
+        </div>
+        <div class="hobby1">
+            <img src="football.jpg">
+            <div class="description">
+                <h1>FOOTBALL</h1>
+                <p>I have been playing football since childhood. I play once a week with friends. Besides that, I like watching football. My favorite team since childhood is Real Madrid, my idol is Cristiano Ronaldo</p>
+            </div>
+        </div>
+        <div class="hobby2">
+            <div class="description2">
+                <h1>SERIES</h1>
+                <p>I watched a lot of TV series, they help to kill time or learn something new. My favorite series: Breaking Bad</p>
+            </div>
+            <img src="brbad.jpg">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_main">
+            <h6>Kazakhstan, Atyrau</h6>
+        </div>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        const navList = document.querySelector('.nav_list');
+        navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_main">
+            <div class="header_left">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger"><img src="burger.png"></label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="hobbies.html">Hobby</a></li>
+                        <li class="current"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right">
+                <a href=""><img src="telegram.png"></a>
+                <a href=""><img src="instagram.png"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="motivation">
+    <div class="container">
+        <div class="background">
+            <h1>DO WHAT YOU LOVE, LOVE WHAT YOU DO</h1>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="contact_blocks">
+            <div class="contact_main">
+                <h1 class="contact_text">Contact Me</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="contact_button" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="my_social">
+                <h1>My contact details</h1>
+                <div class="details">
+                    <ul>
+                        <li class="num"><a href="tel:+77058613329">+7 (705) 861 33 29</a></li>
+                        <li class="inst"><a href="https://www.instagram.com/t6dr.0/profilecard/?igsh=MTNwaHoydzdrc3Jwcg==">@t6dr.0</a></li>
+                        <li class="mail"><a href="mailto:230107106@sdu.edu.kz">230107106@sdu.edu.kz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_main">
+            <h6>Kazakhstan, Atyrau</h6>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

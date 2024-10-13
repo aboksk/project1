@@ -1,0 +1,632 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Barlow', sans-serif;
+    height: auto;
+    background-color: #E4E5EA;
+;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.container{
+    max-width: 1440px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 20px;
+    background-color: #16354D;
+    padding-bottom: 15px;
+
+}
+.header_left{
+    padding-left: 60px;
+}
+.header_left nav ul{
+    display: flex;
+}
+.header_left nav ul li{
+    margin-right: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+.header_left nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+.header_left nav ul li a:hover{
+    color: #D2D2D4;
+}
+.header_right{
+    display: flex;
+}
+.header_right a img{
+    width: 40px;
+    margin-right: 10px;
+}
+.menu-toggle {
+    display: none;
+}
+
+/* Стили для иконки гамбургера */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.current{
+    padding: 2px;
+    border: 1px solid #D2D2D4;
+    border-radius: 5px;
+}
+.aboutme_main{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.main_image{
+    max-width: 400px;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.aboutme_text{
+    max-width: 500px;
+    text-align: left;
+    padding-top: 100px;
+    color: #16354D;
+}
+.aboutme_text p{
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.aboutme_text h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.aboutme_button{
+    background-color: transparent;
+    padding:10px;
+    border-radius: 10px;
+    border: #16354D 2px solid;
+    font-size: 16px;
+    transition: box-shadow 0.2s;
+    font-family: 'Kanit', sans-serif;
+    color: #16354D;
+}
+.aboutme_button:hover{
+    background-color: gray ;
+}
+.aboutme_button a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    background-color: #16354D;
+}
+.footer_main{
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer_main h6{
+    font-family: 'Kanit', sans-serif;
+    color: #D2D2D4;
+}
+.trailer{
+    padding-bottom: 40px;
+}
+.trailer_main{
+    display: flex;
+    gap: 70px;
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+.trailer_card{
+    max-width: 360px;
+    background-color: #16354D;
+    border-radius: 15px;
+    margin:10px;
+    transition: transform 0.1s;
+}
+.trailer_card img{
+    max-width: 360px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+
+}
+.trailer_card:hover{
+    box-shadow: 5px 5px 5px #16354D;
+    transform: scale(1.01);
+}
+.trailer_card h1{
+    font-family: 'Kanit', sans-serif;
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 33px;
+    color: #E4E5EA;
+    padding-bottom: 30px;
+}
+.direct_button{
+    background-color: #E4E5EA;
+    width: 125px;
+    margin-left: 115px;
+    margin-bottom: 10px;
+    border: #0C151C 1px solid;
+
+}
+.direct_button a{
+    text-decoration: none;
+    color: #0C151C;
+    font-family: 'Kanit', sans-serif;
+}
+.family, .hobbies{
+    padding-bottom: 50px;
+}
+.family_1, .hobby1{
+    display: flex;
+    gap: 70px;
+    padding-top: 60px;
+}
+.family_1 img, .hobby1 img{
+    max-width: 320px;
+    margin: 30px 30px 30px 200px;
+    border: #16354D 10px solid;
+}
+.description{
+    padding-top: 160px;
+    max-width: 550px;
+}
+.description h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+.description p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.family_2, .hobby2{
+    display: flex;
+    gap: 70px;
+}
+.family_2 img, .hobby2 img{
+    max-width: 320px;
+    margin: 30px 150px 30px 30px;
+    border: #16354D 10px solid;
+}
+.description2{
+    padding-top: 130px;
+    max-width: 550px;
+    margin: 30px 30px 30px 200px;
+}
+.description2 h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+.description2 p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.gallery_main{
+    max-width: 1200px;
+    padding-left: 280px;
+}
+.gallery_main img{
+    max-width: 400px;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+.gallery_main img:hover{
+    transform: scale(1.05);
+}
+.gallery_h1{
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    padding-bottom: 20px;
+}
+.school_main,.uni_main{
+    background-color: #D2D2D4;
+}
+.school_first,.uni_first{
+    display: flex;
+    padding-top: 60px;
+}
+.school_image img, .uni_image{
+    max-width: 400px;
+    margin: 30px 30px 30px 120px;
+    border: #16354D 10px solid;
+}
+.school_text, .uni_text{
+    font-family: 'Kanit', sans-serif;
+    line-height: 35px;
+    max-width: 650px;
+    padding-top: 100px;
+}
+.school_text h1, .uni_text h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.school_text p, .uni_text p{
+    font-size: 20px;
+}
+.school_second, .uni_second{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    line-height: 35px;
+}
+.altynbelgi{
+    max-width:340px;
+    height: auto;
+    border: #16354D 10px solid;
+    margin: 30px 160px 30px 30px;
+}
+.school_awards, .uni_awards{
+    margin: 30px 30px 30px 160px;
+    font-family: 'Kanit', sans-serif;
+    padding-top: 50px;
+}
+.school_awards h1, .uni_awards h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.school_awards ul li ,.ok{
+    font-size: 20px;
+    background-image: url('images/galochka.png'); /* Ссылка на ваше изображение */
+    background-size: 20px 20px; /* Размер изображения */
+    background-repeat: no-repeat; /* Отключаем повторение */
+    padding-left: 30px; /* Отступ для текста */
+}
+
+.onprocess{
+    font-size: 20px;
+    background-image: url('onprocess.png'); /* Ссылка на ваше изображение */
+    background-size: 20px 20px; /* Размер изображения */
+    background-repeat: no-repeat; /* Отключаем повторение */
+    padding-left: 30px; /* Отступ для текста */
+}
+.library{
+    max-width:340px;
+    height: auto;
+    border: #16354D 10px solid;
+    margin: 30px 160px 30px 30px;
+}
+.gym{
+    position: relative; /* Для абсолютного позиционирования всплывающего блока */
+    width: 150px;
+    height: 100px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.gym_hover{
+    position: absolute;
+    top: 50px; /* Расположение ниже основного блока */
+    left: 200px;
+    width: 800px;
+    background-color: #ffeb3b;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s;
+}
+.gym:hover .gym_hover{
+    opacity: 1;
+    visibility: visible;
+}
+.motivation{
+    background-image: url("morning_sdu.jpg");
+    background-size: 1440px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 812px;
+}
+.background h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 90px;
+    text-align: center;
+}
+.contact{
+    height: 700px;
+}
+.contact_main{
+    margin: 70px 10px 10px 200px;
+    width: 550px;
+    height: 500px;
+    box-shadow: black 1px 1px 1px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.contact_text {
+    text-align: center;
+    padding-top: 40px;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 20px;
+}
+
+input, textarea {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.contact_button {
+    width: 100px    ;
+    padding: 10px;
+    margin:10px 10px 20px 20px;
+    background-color: #16354D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact_button:hover {
+    background-color: black;
+}
+.contact_blocks{
+    display: flex;
+}
+.my_social{
+    width: 550px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 250px 100px 250px 100px;
+    background-color: #16354D;
+    color: #D2D2D4;
+}
+.my_social h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.details{
+    font-size: 15px;
+    line-height: 25px;
+}
+.details ul li a{
+    text-decoration: none;
+    color: white;
+}
+.hobby1 img{
+    margin-top: 100px;
+}
+.hobby2 img{
+    margin-top: 100px;
+}
+
+@media (max-width:  428px){
+    .container{
+        max-width: 428px;
+    }
+    .header_left {
+        padding-left: 20px;
+    }
+
+    .header_left nav ul {
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .header_left nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .hamburger img {
+        width: 30px;  /* Размер иконки можно изменить по своему усмотрению */
+        height: auto;
+        cursor: pointer;
+        z-index: 1000000;
+    }
+
+    .menu-toggle:checked + .hamburger + nav ul {
+        display: flex;
+    }
+    .aboutme_main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_image{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 300px;
+    }
+    .aboutme_text{
+        width: 300px;
+        padding-top: 30px;
+    }
+    .aboutme_text h1{
+        font-size: 45px;
+    }
+    .aboutme_text p{
+        font-size: 20px;
+    }
+    .trailer_main{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .family_1, .hobby1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .family_1 img, .hobby1 img{
+        width: 400px;
+        margin: 30px;
+    }
+    .description{
+        width: 400px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .family_2, .hobby2{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .family_2 img, .hobby2 img{
+        width: 400px;
+        margin: 30px;
+        order: 1;
+    }
+    .description2{
+        width: 400px;
+        text-align: center;
+        padding-top: 10px;
+        margin: 30px;
+        order: 2;
+    }
+    .gallery_main{
+        width: 400px;
+        padding-left: 5px;
+    }
+    .school_first,.uni_first{
+        flex-direction: column;
+        padding-top: 70px;
+    }
+    .school_image img, .uni_image{
+        max-width: 400px;
+        margin: 3px;
+    }
+    .school_text, .uni_text{
+        text-align: center;
+        padding-top: 40px;
+    }
+    .school_text h1, .uni_text h1 {
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    .school_second, .uni_second{
+        flex-direction: column;
+
+    }
+    .altynbelgi{
+        width:420px;
+        order: 1;
+    }
+    .school_awards, .uni_awards{
+        margin: 30px;
+        order: 2;
+        padding-top: 10px;
+    }
+    .library{
+        width: 420px;
+    }
+    .contact_blocks{
+        flex-direction: column;
+    }
+    .contact{
+        height: 900px;
+    }
+    .contact_main{
+        margin: 50px 10px 50px 10px;
+        width: 410px;
+    }
+    .form-group input,.form-group textarea{
+        width: 350px;
+        margin-right: 40px;
+    }
+    .my_social{
+        width: 370px;
+        margin: 30px;
+    }
+}
